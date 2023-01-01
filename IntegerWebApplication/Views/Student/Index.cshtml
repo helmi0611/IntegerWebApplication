@@ -1,6 +1,10 @@
-﻿@model Student
+﻿@model List<Student>;
 
-<p>Id : @Model.Id</p>
-<p>Nama : @Model.Name</p>
-<p>Addres : @Model.Addres</p>
-<p>Phone : @Model.PhoneNumber</p>
+@foreach(var item in Model)
+{
+    <p>Id : @item.Id</p>
+    <p>Nama : @item.Name</p>
+    <p>Addres : @item.Addres</p>
+    <p>Phone : @item.PhoneNumber</p>
+    <hr />
+}

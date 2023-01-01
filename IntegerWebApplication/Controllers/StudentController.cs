@@ -10,22 +10,23 @@ namespace IntegerWebApplication.Controllers
         {
             var student = new List<Student>();
 
-            student.Add (new Student()
-            {
-
-                Id = 1,
-                Name = "Helmi Tris Edyan",
-                Addres = "Banjar Patroman",
-                PhoneNumber = "082117465976"
-            });
             student.Add(new Student()
             {
-
-                Id = 2,
-                Name = "Dede Adam Alamsyah",
-                Addres = "Banjarsari",
-                PhoneNumber = "0821111111111"
+                Id = 1,
+                Name = "Helmi Tris Edyan",
+                Addres = "Kota Banjar",
+                PhoneNumber = "082117465976"
             });
+
+            student.Add(new Student()
+            {
+                Id = 2,
+                Name = "Dede adam alamsyah",
+                Addres = "Banjarsari",
+                PhoneNumber = "1234567890"
+            });
+
+
             return View(student);
         }
     }

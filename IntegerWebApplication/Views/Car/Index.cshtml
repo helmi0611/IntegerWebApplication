@@ -4,7 +4,7 @@
     ViewData["Title"] = "Car Page";
 }
 <div class="card shadow p-2">
-    <h1>@ViewData["Title"]</h1>
+    <h1>Soal 1</h1>
     <table class="table">
         <thead>
             <tr>
@@ -15,7 +15,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in ViewBag.Cars)
+            @foreach (var item in ViewBag.Satu)
             {
                 <tr>
                     <td>@item.IDRegistration</td>
@@ -24,7 +24,109 @@
                     <td>@item.Varian</td>
                 </tr>
             }
+
         </tbody>
+    </table>
+
+    <table class="table">
+        <h2>Soal 2</h2>
+        <thead>
+            <tr>
+                <th>ID Registration</th>
+                <th>Type</th>
+                <th>Brand</th>
+                <th>Varian</th>
+            </tr>
+        </thead>
+        @foreach (var item in ViewBag.Dua)
+            {
+                <tr>
+                    <td>@item.IDRegistration</td>
+                    <td>@item.Type</td>
+                    <td>@item.Brand</td>
+                    <td>@item.Varian</td>
+                </tr>
+            }
+    </table>
+    <table class="table">
+        <h2>Soal 3</h2>
+        <thead>
+            <tr>
+                <th>ID Registration</th>
+                <th>Type</th>
+                <th>Brand</th>
+                <th>Varian</th>
+            </tr>
+        </thead>
+        @foreach (var item in ViewBag.Tiga)
+            {
+                <tr>
+                    <td>@item.IDRegistration</td>
+                    <td>@item.Type</td>
+                    <td>@item.Brand</td>
+                    <td>@item.Varian</td>
+                </tr>
+            }
+    </table>
+    <table class="table">
+        <h2>Soal 4</h2>
+        <thead>
+            <tr>
+                <th>ID Registration</th>
+                <th>Type</th>
+                <th>Brand</th>
+                <th>Varian</th>
+            </tr>
+        </thead>
+        @foreach (var item in ViewBag.Empat)
+        {
+            <tr>
+                <td>@item.IDRegistration</td>
+                <td>@item.Type</td>
+                <td>@item.Brand</td>
+                <td>@item.Varian</td>
+            </tr>
+        }
+    </table>
+    <table class="table">
+        <h2>Soal 5</h2>
+        <thead>
+            <tr>
+                <th>ID Registration</th>
+                <th>Type</th>
+                <th>Brand</th>
+                <th>Varian</th>
+            </tr>
+        </thead>
+        @foreach (var item in ViewBag.Lima)
+        {
+            <tr>
+                <td>@item.IDRegistration</td>
+                <td>@item.Type</td>
+                <td>@item.Brand</td>
+                <td>@item.Varian</td>
+            </tr>
+        }
+    </table>
+    <table class="table">
+        <h2>Soal 6</h2>
+        <thead>
+            <tr>
+                <th>ID Registration</th>
+                <th>Type</th>
+                <th>Brand</th>
+                <th>Varian</th>
+            </tr>
+        </thead>
+        @foreach (var item in ViewBag.Enam)
+        {
+            <tr>
+                <td>@item.IDRegistration</td>
+                <td>@item.Type</td>
+                <td>@item.Brand</td>
+                <td>@item.Varian</td>
+            </tr>
+        }
     </table>
     
     
